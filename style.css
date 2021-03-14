@@ -1,0 +1,82 @@
+:root {
+    --dark: #353531;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--dark);
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+#logoImg {
+    height: 100%;
+}
+
+
+a.active {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.programs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.program {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.5em;
+    align-items: center;
+    /* border-right: 3px solid rgba(0, 0, 0, 0.3); */
+}
+
+.dividing-line {
+    height: 50vh;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.program-icon {
+    width: 100px;
+}
+
+.program-link {
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
