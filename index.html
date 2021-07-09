@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./skeleton.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -15,9 +16,8 @@
             <a href="#" class="active">Study</a> / <a href="./resources.html">Resources</a>
         </div>
     </header>
-    <section id="pinghe">
-
-        <h2>Shanghai Pinghe School</h2>
+    <section id="study-room" class="container">
+        <h2>Study Rooms</h2>
         <div class="programs">
             <div id="IB" class="program">
                 <img src="./iblogo.png" alt="" class="ibLogo program-icon">
@@ -49,27 +49,52 @@
             <div class="dividing-line"></div>
             <div id="headphone" class="program">
                 <img src="./hpLogo.png" alt="" class="hpLogo program-icon">
-                <div class="program-name">With Ambient Music</div>
+                <div class="program-name">Ambient Music</div>
                 <a href="https://meeting.tencent.com/p/9723349231" class="program-link dyf">
                     G10/11/12</a>
             </div>
         </div>
     </section>
 
-    <script>
-        // function copyMeeting() {
-        //     const str = this.dataset.meeting;
-        //     let strElement = document.createElement("textarea");
-        //     strElement.value = str;
-        //     document.body.appendChild(strElement);
-        //     strElement.select();
-        //     document.execCommand("copy");
-        //     document.body.removeChild(strElement);
-        //     console.log(this);
-        // }
-        // const links = document.querySelectorAll(".program-link");
-        // links.forEach(link => link.addEventListener("onclick", copyMeeting));
-    </script>
+	<section>
+		<h2>Logs</h2>
+		<div class="container">
+		<form>
+			<div class="row">
+				<div class="eight columns">
+					<label for="message">Message content</label>
+					<textarea id="log-message" placeholder"Log something down" cols="50"></textarea>
+				</div>
+				<div class="four columns">
+					<label for="duration">Duration (in mins)</label>
+					<input id="log-duration" type="number">
+					<button id="log-submit"class="button" style="margin-top: 2rem;">Submit</button>
+				</div>
+				
+			</div>
+		</form>
+		</div>
+		<hr>
+		<h4>Previous Logs</h3>
+		<div id="logs" class="container">
+			<div class="log row">
+				<div class="eight columns">Sample text lorem ipsum blah blah blah lorem ipsum blah blah blah lorem ipsum blah blah blah lorem ipsum blah blah blah</div>
+				<div class="four columns">
+					<div class="badge">45mins</div>
+					<div class="badge">2020-9-11</div>
+				</div>
+			</div>
+			<div class="log row">
+				<div class="eight columns">Sample text lorem ipsum blah blah blah lorem ipsum blah blah blah lorem ipsum blah blah blah lorem ipsum blah blah blah</div>
+				<div class="four columns">
+					<div class="badge">45mins</div>
+					<div class="badge">2020-9-11</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="index_script.js"></script>
+
 </body>
 
 </html>

@@ -15,8 +15,12 @@ a:hover {
     text-decoration: underline;
 }
 
+label {
+	font-weight: normal;
+}
+
 html {
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 body {
@@ -47,8 +51,9 @@ a.active {
     font-weight: bold;
 }
 
-h2 {
-    font-size: 2em;
+
+form {
+	margin-bottom: 0;
 }
 
 .programs {
@@ -61,7 +66,6 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    font-size: 1.5em;
     align-items: center;
     /* border-right: 3px solid rgba(0, 0, 0, 0.3); */
 }
@@ -80,3 +84,40 @@ h2 {
     text-decoration: underline;
     margin-bottom: 30px;
 }
+
+section {
+	margin: 2rem 0;
+}
+
+hr {
+	margin: 1rem 0;
+}
+
+#log-message {
+	height: 10rem;
+}
+
+.button, .button:focus {
+	color: white;
+	border-color: white;
+}
+
+.button:hover {
+	color: rgba(255,255,255,0.8);
+}
+
+.badge {
+	color: black;
+	background-color: #eee;
+	width: 7rem;
+	margin-bottom: 1rem;
+	margin-left:3rem;
+	border-radius: 5%;
+	font-family: Raleway;
+	font-size:1rem;
+}
+
+.log {
+	margin-bottom: 3rem;
+}
+
