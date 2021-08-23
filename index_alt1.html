@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./skeleton.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.jpeg" alt="" class="logo" id="logoImg">
+        <div class="sites">
+			<a href="#" class="active">Study</a> / <a id="resources-link" href="https://pan.baidu.com/s/4mpRaLQw">Resources</a>
+        </div>
+    </header>
+	<div style="margin: 10px; background-color: rgba(1,1,1,0.1);"class="row log">
+		<div class="eight columns"><h5 style="margin-bottom:0;">Anouncement</h5>We will be holding our next meeting at 21-8-22.</div>
+		<div class="four columns">
+			<div class="badge">14:00 - 16:00</div>
+			<div class="badge">2021-8-22</div>
+		</div>
+	</div>
+    <section id="study-room" class="container"> <h2>Study Rooms</h2>
+        <div class="programs">
+            <div id="IB" class="program">
+				<div>
+					<img src="./iblogo.png" alt="" class="ibLogo program-icon">
+					<div class="program-name">IB</div>
+				</div>
+                <a class="program-link cmc" href="https://meeting.tencent.com/p/5522364977">
+                    Pinghe</a>
+				<a class="program-link"></a>
+            </div>
+            <div class="dividing-line"></div>
+            <div id="AP" class="program">
+				<div>
+					<img src="./apLogo.png" alt="" class="apLogo program-icon">
+					<div class="program-name">AP</div>
+				</div>
+                <a href="https://meeting.tencent.com/p/3100258555" class="program-link zoe">
+                    Pinghe</a>
+                <a href="https://meeting.tencent.com/p/4364245915" class="program-link sjr-2">Star River</a>
+				<a class="program-link sjr" href="https://meeting.tencent.com/p/6956773572">Gezhi</a>
+
+            </div>
+            <div class="dividing-line"></div>
+            <div id="ALevel" class="program">
+				<div>
+					<img src="./alLogo.png" alt="" class="alLogo program-icon">
+					<div class="program-name">A-Level</div>
+				</div>
+                <a href="https://meeting.tencent.com/p/6075059617" class="program-link sjr-3">
+                    Public</a>
+				<a class="program-link"></a>
+                <!-- <a href="https://meeting.tencent.com/p/6465440235" class="program-link sjr-4"> -->
+                    <!-- G11/12</a> -->
+            </div>
+            <div class="dividing-line"></div>
+            <div id="headphone" class="program">
+                <img src="./hpLogo.png" alt="" class="hpLogo program-icon">
+                <div class="program-name">Ambient Music</div>
+                <a href="https://meeting.tencent.com/p/9723349231" class="program-link dyf">
+					Public</a>
+				<a class="program-link"></a>
+            </div>
+        </div>
+    </section>
+
+	<section>
+		<h2>Logs</h2>
+		<div class="container">
+		<form>
+			<div class="row">
+				<div class="eight columns">
+					<label for="message">Message content</label>
+					<textarea id="log-message" placeholder"Log something down" cols="50"></textarea>
+				</div>
+				<div class="four columns">
+					<label for="duration">Duration (in mins)</label>
+					<input id="log-duration" type="number">
+					<button id="log-submit"class="button" style="margin-top: 2rem;">Submit</button>
+				</div>
+				
+			</div>
+		</form>
+		</div>
+		<hr>
+		<h4>Previous Logs</h3>
+		<div id="logs" class="container">
+		</div>
+	</section>
+	<script src="./index_script.js"></script>
+	<script src="./index_prompt.js"></script>
+
+</body>
+
+</html>
